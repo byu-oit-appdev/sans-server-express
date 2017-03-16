@@ -1,0 +1,24 @@
+{
+  "name": "sans-server-express",
+  "version": "0.0.1",
+  "description": "Express middleware that will send requests through a sans-server instance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byu-oit-appdev/sans-server-express.git"
+  },
+  "keywords": [
+    "sans-server",
+    "sans-server-middleware",
+    "express"
+  ],
+  "author": "James Speirs <james.speirs@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/byu-oit-appdev/sans-server-express/issues"
+  },
+  "homepage": "https://github.com/byu-oit-appdev/sans-server-express#readme"
+}
