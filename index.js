@@ -57,6 +57,6 @@ module.exports = function(sansServer) {
         
                 // use Express to send the response
                 res.send(response.body);
-            })
+            });
     };
 };
