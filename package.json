@@ -1,6 +1,6 @@
 {
   "name": "sans-server-express",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Express middleware that will send requests through a sans-server instance.",
   "main": "index.js",
   "scripts": {
