@@ -35,7 +35,7 @@ module.exports = function(sansServer) {
         };
 
         // process the request
-        sansServer(request)
+        sansServer.request(request)
             .then(response => {
                 if (!response) return next();
     
