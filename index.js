@@ -17,10 +17,11 @@
 'use strict';
 
 module.exports = function(sansServer) {
+    const symbol = Symbol();
 
     // if this middleware is reached then resolve the request without a response
-    sansServer.use(function(req, res, next) {
-        req.resolve();
+    sansServer.use(function(req) {
+        req.resolve(symbol);
     });
 
     return function (req, res, next) {
@@ -37,7 +38,7 @@ module.exports = function(sansServer) {
         // process the request
         sansServer.request(request)
             .then(response => {
-                if (!response) return next();
+                if (response === symbol) return next();
     
                 if (response.error) console.error(response.error.stack);
         
