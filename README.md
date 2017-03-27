@@ -8,7 +8,7 @@ const SansServer = require('sans-server');
 const ssMiddleware = require('sans-server-express');
 
 const app = express();
-const sansServer = SansServer();
+const sansServer = SansServer();    // you can provide a sans-server configuration here
 
 // sans-server will process the request and respond accordingly
 app.use(ssMiddleware(sansServer));
